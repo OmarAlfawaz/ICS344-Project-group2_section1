@@ -156,6 +156,6 @@ This phase fulfills the objectives of SIEM-based analysis using Splunk, in accor
 
 ## 👤 Contributor for Phase 2
 
-- **Name:** Omar
-- **ID:** 202XXXXX
+- **Name:** Omar Alfawaz
+- **ID:** 202018400
 - **Role:** Handled all Phase 2 activities including Splunk installation, log ingestion, dashboard creation, and documentation.

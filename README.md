@@ -4,7 +4,7 @@ This repository contains our full course project for ICS344, including the three
 
 1. **Phase 1 – Service Setup and Exploitation**
 2. **Phase 2 – SIEM Dashboard Analysis**
-3. **Phase 3 – Defensive Strategy Proposal** (to be added)
+3. **Phase 3 – Defensive Strategy Proposal** 
 
 ---
 

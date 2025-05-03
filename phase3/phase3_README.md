@@ -18,12 +18,12 @@ Phase 3 demonstrates two approaches to counter brute-forcing SSH credentials:
 
 ## DEFENSE MECHANISM
 
-###Defense 1 Changed the Default Password of the Victim 
+### Defense 1 Changed the Default Password of the Victim 
 -Run "passwd" after sign in
 -Enter old password
 -Enter new password
 
-###Defense 2 installed fail2ban in the victim machine using
+### Defense 2 installed fail2ban in the victim machine using
 -Run sudo apt update
 -Run sudo apt install fail2ban -y
 -configure fail2ban

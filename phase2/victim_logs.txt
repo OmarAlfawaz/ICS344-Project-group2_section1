@@ -1,0 +1,74 @@
+May 2 18:51:58 metasploitable3-ub1404 sshd[1477]: Server listening on 0.0.0.0 p
+ort 22.
+May 2.
+2 18:51:58 metasploitable3-ub1404 sshd[1477]: Server listening on :: port 2
+May 2 18:59:21 metasploitable3-ub1404 sshd[2091]: pam_unix (sshd :auth): authenti cation failure: logname= uid=0 euid=0 ttyssh ruser= rhost=192.168.0.136 user=u
+agrant
+May 2 18:59:23 metasploitable3-ub1404 sshd[2091]: Failed password for vagrant f rom 192.168.0.136 port 47844 ssh2
+May 2 18:59:23 metasploitable3-ub1404 sshd[2093]: pam_unix (sshd :auth): authenti cation failure: logname= uid=0 euid=0 ttyssh ruser= rhost=192.168.0.136 user=u
+agrant
+May 2 18:59:25 metasploitable3-ub1404 sshd[2093]: Failed password for vagrant f rom 192.168.0.136 port 47858 ssh2
+May 2 18:59:25 metasploitable3-ub1404 sshd[2095]: pam_unix (sshd :auth): authenti cation failure: logname= uid=0 euid=0 ttyssh ruser= rhost=192.168.0.136 user=u
+agrant
+May 2 18:59:28 metasploitable3-ub1404 sshd[2095]: Failed password for vagrant f rom 192.168.0.136 port 47872 ssh2
+May 2 18:59:28 metasploitable3-ub1404 sshd[2097]: Accepted password for vagrant from 192.168.0.136 port 47888 ssh2
+May 2 18:59:28 metasploitable3-ub1404 sshd[2097]: pam_unix (sshd:session): sessi on opened for user vagrant by (uid=0)
+May 2 18:59:28 metasploitable3-ub1404 sshd[2095]: Connection closed by 192.168.
+0.136 [preauth]
+May 2 18:59:28 metasploitable3-ub1404 sshd[2093]: Connection closed by 192.168.
+0.136 [preauth]
+May 2 18:59:28 metasploitable3-ub1404 sshd[2091]: Connection closed by 192.168
+0.136 [preauth]
+May 3 00:24:56 metasploitable3-ub1404 sshd[2770]: pam_unix(sshd:auth): authenti cation failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.136 user=u agrant May 3 00:24:58 metasploitable3-ub1404 sshdI2770]: Failed password for vagrant f
+rom 192.168.0.136 port 58010 ssh2
+May 3 00:24:58 metasploitable3-ub1404 sshdI2772]: pam_unix(sshd:auth): authenti
+cation failure: logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.136
+user=u
+agrant
+May
+3 00:25:00 metasploitable3-ub1404 sshdI2772]: Failed password for vagrant f
+rom 192.168.0.136 port 58018 ssh2
+May
+3 00:25:00 metasploitable3-ub1404 sshd[2774]: pam_unix(sshd:auth): authenti
+cation failure: logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.136
+user=u
+agrant
+May 3 00:25:02 metasploitable3-ub1404 sshdl27741: Failed password for vagrant f
+rom 192.168.0.136 port 58022 ssh2
+May 3 00:25:02 metasploitable3-ub1404 sshdl27761: Accepted password for vagrant
+from 192.168.0.136 port 58024 ssh2
+May 3 00:25:02 metasploitable3-ub1404 sshdl2776]: pam_unix(sshd:session): sessi
+on opened for user vagrant by (uid=0)
+May 3 00:25:02 metasploitable3-ub1404 sshdl2772]: Connection closed by 192.168.
+0.136 [preauth]
+May
+3 00:25:02 metasploitable3-ub1404 sshd[2774]: Connection closed by 192.168.
+0.136 [preauth]
+May 3 00:25:02 metasploitable3-ub1404 sshd[2770]: Connection closed by 192.168.
+0.136 [preauth]
+May
+3 00:25:02 metasploitable3-ub1404 sshdI2776]: pam_unix(sshd:session): sessi
+May 3 00:25:02 metasploitable3-ub1404 sshd[2774]: Connection closed by 192.168.
+0.136 Lpreauth]
+May 3 00:25:02 metasploitable3-ub1404 sshdl2770]: Connection closed by 192.168.
+0.136 [preauth]
+May 3 00:25:02 metasploitable3-ub1404 sshd[2776]: pam_unix(sshd:session): sessi
+on closed for user vagrant
+May
+3 00:28:48 metasploitable3-ub1404 sudo:
+vagrant : TTY=tty1 ; PWD=/home/vag
+rant
+; USER=root ; COMMAND=/usr/bin/fail2ban-client status ssh
+May 3
+00:40:26
+rant
+metasploitable3-ub1404 sudo:
+vagrant : TTY=tty1 ; PWD=/home/vag
+May
+; USER=root : COMMAND=/bin/grep ssh /var/log/auth. log
+3
+00:41:53
+rant
+metasploitable3-ub1404 sudo:
+vagrant : TTY=tty1 : PWD=/home/vag
+; USER=root : COMMAND=/bin/grep ssh /var/log/auth.log
